@@ -1,0 +1,731 @@
+body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container
+{
+    background-color: #f5f6fa;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+img
+{
+    height: 100%;
+    width: 50px;
+}
+header
+{
+    width: 100%;
+    grid-column: 1 / span 12;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+header .img{
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+header .text{
+    grid-column: 2 / span 3;
+}
+header h1{
+    font-family: Impact, cursive;
+    font-style: oblique;
+    font-size: 11vw;
+    margin: 0;
+    padding: 0;
+    color: #fdcb6e;
+    text-shadow: 0 4px 3px rgba(0,0,0,0.4),
+    0 8px 13px rgba(0,0,0,0.1),
+    0 18px 23px rgba(0,0,0,0.1);
+}
+header img
+{
+    height: 50%;
+    width: 11vw;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+div[class^='img']:hover
+{
+    transform: scale(1.2);
+}
+nav
+{
+    grid-column: 1 / span 12;
+}
+nav ul
+{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li
+{
+    float: left;
+    width: 100%;
+    margin: 0 50px;
+    text-align: center;
+}
+nav ul li a
+{
+    font-size: 2vw;
+    color: #353b48;
+    text-decoration: none;
+}
+.active
+{
+    background-color: #55efc4;
+    border-radius: 100%;
+}
+.dropbtn
+ {
+     padding: 13px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+ }
+.dropbtn:hover, .dropbtn:focus
+{
+    background-color: #ddd;
+}
+.dropdown
+{
+    position: relative;
+    display: none;
+    height: 100%;
+}
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    right: 0;
+}
+.dropdown-content a
+{
+    padding: 12px 16px;
+    text-decoration: none;
+    color:  #353b48;
+    display: block;
+}
+.dropdown a:hover
+{
+    background-color: #ddd;
+}
+.show {display: block;}
+.banner
+{
+    grid-column: 1 / span 12;
+    width: 100%;
+}
+.banner img
+{
+    width: 100%;
+}
+.navbarcontainer
+{
+    grid-column: 1 / span 2;
+    grid-row: 4;
+    background-color: black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 75px auto;
+}
+.table-header
+{
+    color: white;
+    font-size: 2vw;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+.navbarcontainer ul
+{
+    list-style: none;
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 50px 50px;
+}
+.navbarcontainer ul li
+{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.navbarcontainer ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1vw;
+}
+.nogap
+{
+    grid-gap: 0;
+}
+.contentheader
+{
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: center;
+}
+.contentheader h3
+{
+    font-family: "Noto Sans", Arial, fantasy;
+    font-size: 3vw;
+    margin: 0;
+}
+.content
+{
+    grid-column: 1 / span 4;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    position: relative;
+}
+iframe
+{
+    grid-column: 1 / span 4;
+}
+.card1
+{
+    grid-column: 1;
+    grid-row: 1;
+    background-color: white;
+    padding: 10px;
+}
+.card2
+{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: white;
+    padding: 10px;
+}
+.card3
+{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: white;
+    padding: 10px;
+}
+.card4
+{
+    grid-column: 4;
+    grid-row: 1;
+    background-color: white;
+    padding: 10px;
+}
+.card5
+{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: white;
+    padding: 10px;
+}
+.card6
+{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: white;
+    padding: 10px;
+}
+.card7
+{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: white;
+    padding: 10px;
+}
+.card8
+{
+    grid-column: 4;
+    grid-row: 2;
+    background-color: white;
+    padding: 10px;
+}
+.cardimg
+{
+    width: 100%;
+    height: 200px;
+}
+.cardimg img
+{
+    width: 100%;
+    height: 100%;
+}
+.card-text
+{
+    font-family: "Noto Sans", cursive;
+    font-size: 1vw;
+    text-align: center;
+}
+.cardheader
+{
+    font-family: "Noto Sans", cursive;
+    font-size: 2vw;
+}
+.newsheader
+{
+    padding: 10px;
+    text-align: center;
+    border: 3px dashed #ccc;
+    color: lightgrey;
+    font-size: 4vw;
+}
+.news
+{
+    font-size: 1vw;
+    margin: 20px 0;
+    color: lightgrey;
+    border-bottom: 1px dotted white;
+}
+footer
+{
+    background-color: #fdcb6e;
+    width: 100%;
+    height: 100px;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.copyrightcontainer
+{
+    width:100%;
+    grid-column: 1 / span4;
+    grid-row: 2;
+}
+.copyright
+{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    font-size: 1vw;
+}
+.socialmedia
+{
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+.snake
+{
+    margin: 0;
+    padding: 0;
+}
+.snake .snake2
+{
+    list-style: none;
+}
+.snake .snake2 a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 3vw;
+    height: 3vw;
+    font-size: 2vw;
+    text-align: center;
+    background: #ccc;
+    text-decoration: none;
+    color: brown;
+    transition: transform .5s;
+}
+.snake .snake2 a span
+{
+    position: absolute;
+    transition: transform .5s;
+}
+.snake .snake2 a span:nth-child(1),
+.snake .snake2 a span:nth-child(3)
+{
+    width: 100%;
+    height: 1px;
+    background: brown;
+}
+.snake .snake2 a span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+.snake .snake2 a:hover span:nth-child(1)
+{
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+
+.snake .snake2 a span:nth-child(3)
+{
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+.snake .snake2 a:hover span:nth-child(3)
+{
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+.snake .snake2 a span:nth-child(2),
+.snake .snake2 a span:nth-child(4)
+{
+    width: 1px;
+    height: 100%;
+    background: #262626;
+}
+.snake .snake2 a span:nth-child(2)
+{
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.snake .snake2 a:hover span:nth-child(2)
+{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+.snake .snake2 a span:nth-child(4)
+{
+    bottom: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.snake .snake2 a:hover span:nth-child(4)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+.logo1
+{
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    justify-content: center;
+}
+.logo2
+{
+    grid-column: 2;
+    grid-row: 1;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.logo3
+{
+    grid-column: 3;
+    grid-row: 1;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.logo4
+{
+    grid-column: 4;
+    grid-row: 1;
+    float: left;
+    display: flex;
+    justify-content: center;
+}
+.sidebarcontainer
+{
+    grid-column: 12;
+    padding: 1vw;
+    background-color: black;
+}
+.contentcontainer
+{
+    grid-column: 3 / span 9;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 50px auto;
+    grid-gap: 10px;
+}
+.table-header
+{
+    color: white;
+    font-size: 2vw;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .sidebarcontainer
+    {
+        grid-column: 1 / -1;
+        padding: 1vw;
+        background-color: black;
+        grid-row: 7;
+    }
+    .navbarcontainer
+    {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        background-color: black;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 75px auto;
+    }
+    .table-header
+    {
+        color: white;
+        font-size: 2vw;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+    .navbarcontainer ul
+    {
+        list-style: none;
+        grid-column: 2;
+    }
+    .navbarcontainer ul li
+    {
+        margin: 50px 0;
+    }
+    .navbarcontainer ul li a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 1vw;
+    }
+    .contentcontainer
+    {
+        grid-column: 1 / -1;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px auto;
+        grid-gap: 10px;
+        grid-row: 5;
+    }
+    nav
+    {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
+    .dropdown
+    {
+        display: block;
+        grid-column: 10;
+        text-align: center;
+    }
+    nav ul
+    {
+        display: none;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+    }
+    footer
+    {
+        width: 100%;
+        height: auto;
+        grid-column: 1 / span 12;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .socialmedialogo
+    {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .socialmedia
+    {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        display: grid;
+        place-content: center;
+        grid-gap: 10px;
+        padding-top: 10px;
+    }
+    .logo1
+    {
+        grid-row: 1;
+        grid-column: 1 / span 4;
+    }
+    .logo2
+    {
+        grid-row: 2;
+        grid-column: 1 / span 4;
+    }
+    .logo3
+    {
+        grid-row: 3;
+        grid-column: 1 / span 4;
+    }
+    .logo4
+    {
+        grid-row: 4;
+        grid-column: 1 / span 4;
+    }
+    .copyrightcontainer
+    {
+        width:100%;
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+    .copyright
+    {
+        display: grid;
+        justify-content: center;
+        width: 100%;
+        font-size: 10px;
+    }
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card1
+    {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: white;
+    }
+    .card2
+    {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: white;
+    }
+    .card3
+    {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: white;
+    }
+    .card4 {
+        grid-column: 1;
+        grid-row: 4;
+        background-color: white;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .card-text
+    {
+        font-size: 10px;
+    }
+    .news
+    {
+        font-size: 3vw;
+    }
+    .sidebarcontainer
+    {
+        grid-column: 1 / -1;
+        padding: 1vw;
+        background-color: black;
+        grid-row: 6;
+    }
+    .navbarcontainer
+    {
+        grid-column: 1 / -1;
+        grid-row: 4;
+        background-color: black;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10px auto;
+    }
+    .table-header
+    {
+        color: white;
+        font-size: 2vw;
+        width: 100%;
+        grid-column: 2;
+        grid-row: 1;
+        text-align: center;
+    }
+    .navbarcontainer ul
+    {
+        list-style: none;
+        grid-column: 1 / -1;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .navbarcontainer ul li
+    {
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+    }
+    .navbarcontainer ul li a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .contentcontainer
+    {
+        grid-column: 1 / -1;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 50px auto;
+        grid-gap: 10px;
+        grid-row: 5;
+    }
+    .content
+    {
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content
+    {
+        grid-column: 1 / span 4;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .card1
+    {
+        grid-column: 1;
+        grid-row: 1;
+        background-color: white;
+    }
+    .card2
+    {
+        grid-column: 2;
+        grid-row: 1;
+        background-color: white;
+    }
+    .card3
+    {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: white;
+    }
+    .card4 {
+        grid-column: 2;
+        grid-row: 2;
+        background-color: white;
+    }
+}
+
